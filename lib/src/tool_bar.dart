@@ -1141,11 +1141,13 @@ class ToolBarItem extends StatelessWidget {
       case ToolBarStyle.listBullet:
         return _getIconWidget(Icons.format_list_bulleted_sharp);
       case ToolBarStyle.headerOne:
-        return Text(
-          'Blue Bar Header',
-          style: TextStyle(
-            color: isActive ? activeIconColor : iconColor,
-            fontWeight: FontWeight.bold,
+        return Center(
+          child: Text(
+            'Blue Bar Header',
+            style: TextStyle(
+              color: isActive ? activeIconColor : iconColor,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         );
       case ToolBarStyle.headerTwo:
